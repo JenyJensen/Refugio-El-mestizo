@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Refugio El Mestizo.</title>
+    <link rel="icon" href="../static/img/Pata.ico">
+
+    <script src="https://kit.fontawesome.com/e232c8237d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/refugio.css">
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <main>
+        <section class="formulario-seccion">
+            <h1>CONTACTANOS</h1>
+        </section>
+        <section id="formulario-contacto">
+            <p>
+                Para hacer donaciones o ser madrina/padrino,
+                comunicate al tel (+549)223-456789.
+            </p>
+            <p>Whatsapp +549225745689</p>
+            <p>Correo: elmestizo@gmail.com.ar</p>
+            <div class="contact-box">
+                <h3 class="titulo-formulario">O llena este formulario y te enviaremos un email con la respuesta.</h3>
+                <form>
+                    <p><label for="Nombre y apellido:">Nombre y apellido:</label>
+                    <div id="nombre-error" class="error-message"></div>
+                    <input type="text" size="30" name="nombre" id="nombre">
+
+                    </p>
+                    <p><label for="Email:">Email:</label>
+                    <div id="email-error" class="error-message"></div>
+                    <input type="text" size="30" name="email" id="email">
+
+                    </p>
+                    <p>
+                        <label for="Telefono:">Teléfono:</label>
+                    <div id="telefono-error" class="error-message"></div>
+                    <input type="tel" size="30" id="telefono">
+
+                    </p>
+                    <p>
+                        <label for="intencion">¿Qué querés hacer?</label>
+                    </p>
+                    <p>
+                        <label for="Adoptar">Adoptar</label>
+                        <input type="checkbox" name="opcion" value="adoptar">
+                    </p>
+                    <p>
+                        <label for="Apadrinar">Apadrinar</label>
+                        <input type="checkbox" name="opcion" value="apadrinar">
+                    </p>
+                    <p>
+                        <label for="Visitarnos">Visitarnos</label>
+                        <input type="checkbox" name="opcion" value="visitarnos" id="mostrarSelect"
+                            onchange="toggleSelect()">
+                    </p>
+                    <div id="selectContainer" style="display: none; margin-bottom: 12px;">
+                        <label for="opciones">Selecciona turno para visitarnos:</label>
+                        <select id="opciones" name="opciones" class="turnos">
+                            <option value="opcion1">Mañana</option>
+                            <option value="opcion2">Tarde</option>
+                            <option value="opcion3">Noche</option>
+                        </select>
+                    </div>
+
+                    <div class="textarea">
+                        <label for="Comentario.">Comentario:</label>
+                        <textarea name="comentario" id="comentario" rows="4" cols="50"></textarea>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+        </section>
+        </div>
+    </main>
+    <div id="footer-placeholder"></div>
+</body>
+<script src="../static/js/nyfloader.js"></script>
+<script src="../static/js/formulario.js"></script>
+
+</html>
