@@ -1,0 +1,43 @@
+Listado de rutas de carpetas para el volumen YUMI
+El n�mero de serie del volumen es 9C5A-6D0C
+C:.
+�   
+�   
+����static
+�   ����css
+�   �       footer.css
+�   �       navbar.css
+�   �       refugio.css
+�   �       
+�   ����img
+�   �       Amazona_ochrocephala.jpg
+�   �       bella_2.jpg
+�   �       chico con perro.jpg
+�   �       IMG-20230622-WA0000-1006x1024.jpg
+�   �       luna_1.jpg
+�   �       Pata.ico
+�   �       Pata.png
+�   �       que-es-una-red-can-ejemplos-1.webp
+�   �       refugio logo.jpg
+�   �       sddefault.jpg
+�   �       simba.jpg
+�   �       _9e12a5c0-a38c-42d4-9e5b-7ff135c3d8dc.jpg
+�   �       _b91af6d6-72b1-4606-a285-40d0684ee67a.jpg
+�   �       _dabece8b-1bb6-4412-a0d5-ce99dab84ae1.jpg
+�   �       _fed1f76e-60e4-4f41-b424-ff9235912529.jpg
+�   �       
+�   ����js
+�           formulario.js
+�           nyfloader.js
+�           perromatch.js
+�           
+����templates
+    �   buscar-mascota.html
+    �   contacto.html
+    �   index.html
+    �   perromatch.html
+    �   
+    ����fragments
+            footer.html
+            navbar.html
+            
