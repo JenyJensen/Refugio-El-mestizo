@@ -12,7 +12,7 @@ DATABASE_CONFIG = {
     'password': os.getenv('DB_PASSWORD'),
     'host': os.getenv('DB_HOST'),
     'database': os.getenv('DB_NAME'),
-    'port': os.getenv('DB_PORT', 3306)
+    'port': os.getenv('DB_PORT', 3307)
 }
 
 # Función para obtener la conexión a la base de datos

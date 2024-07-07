@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../static/css/refugio.css">
     <script src="https://kit.fontawesome.com/e232c8237d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="navbar-placeholder"></div>
     <main>
@@ -21,6 +23,41 @@
             <h3>Puedes elegir una mascota de esta lista para adoptar, y luego contactarnos para conocerse.</h3>
             <div class="lista-perros-box">
                 <!-- Aquí se cargarán los animales desde la base de datos -->
+            </div>
+
+            <div class="cargar-animal">
+                <h3 class="titulo-formulario">Cargar un nuevo animal.</h3>
+                <form id="animalForm" method="post" enctype="multipart/form-data">
+                    <p>
+                        <input type="text" size="30" name="id" id="id" hidden> 
+                    </p>
+                    <p><label for="Nombre:">Nombre:</label>
+
+                        <input type="text" size="30" name="Nombre" id="Nombre">
+
+                    </p>
+                    <p><label for="raza:">Raza:</label>
+
+                        <input type="text" size="30" name="raza" id="raza">
+
+                    </p>
+                    <p>
+                        <label for="peso:">Peso:</label>
+                        <input type="number" size="30" id="peso" name="peso">
+                    </p>
+                    <p>
+                        <label for="edad">Edad:</label>
+                        <input type="number" size="20" id="edad" name="edad">
+                    </p>
+                    <p>
+                        <label for="descripcion">Descripcion:</label>
+                        <textarea name="descripcion" id="descripcion" rows="4" cols="50"></textarea>
+                    </p>
+                    <p>
+                        <label for="foto">Foto:</label>
+                        <input type="file" name="foto" accept=".jpg, .jpeg" id="foto">
+                    </p>
+                    <button type="submit">Cargar</button>
             </div>
         </section>
         <section id="perro-match" class="announcement-section">
@@ -41,5 +78,7 @@
     <div id="footer-placeholder"></div>
 </body>
 <script src="../static/js/nyfloader.js"></script>
-<script src="../static/js/buscar-mascota.js"></script>
+<script src="../static/js/buscar-mascota.js"></script> 
+<script src="../static/js/post.js"></script> 
+<script src="../static/js/delete.js"></script> 
 </html>
